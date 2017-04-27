@@ -24,9 +24,9 @@ function resultArray($array) {
         $code = 400;
         $array['data'] = '';
     }
-    return [
+    return json([
         'code'  => $code,
         'data'  => $array['data'],
         'error' => $array['error']
-    ];
+    ]);
 }
